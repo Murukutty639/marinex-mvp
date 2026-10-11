@@ -1,0 +1,20 @@
+
+> marinex-mvp@0.1.0 dev
+> concurrently "npm run dev -w apps/api" "npm run dev -w apps/web"
+
+[0] 
+[0] > @marinex/api@0.1.0 dev
+[0] > tsx watch src/index.ts
+[0] 
+[1] 
+[1] > @marinex/web@0.1.0 dev
+[1] > vite --host 0.0.0.0
+[1] 
+[1] 
+[1]   VITE v5.4.21  ready in 583 ms
+[1] 
+[1]   ➜  Local:   http://localhost:5173/
+[1]   ➜  Network: http://192.168.65.1:5173/
+[1]   ➜  Network: http://192.168.189.1:5173/
+[1]   ➜  Network: http://192.168.1.161:5173/
+[0] MariNex API listening on http://localhost:4000

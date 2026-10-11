@@ -1,0 +1,12 @@
+
+> @marinex/web@0.1.0 dev
+> vite --host 0.0.0.0
+
+Re-optimizing dependencies because lockfile has changed
+
+  VITE v5.4.21  ready in 583 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: http://192.168.65.1:5173/
+  ➜  Network: http://192.168.189.1:5173/
+  ➜  Network: http://192.168.1.161:5173/

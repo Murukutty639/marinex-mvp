@@ -1,0 +1,28 @@
+{
+  "name": "marinex-mvp",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w apps/api\" \"npm run dev -w apps/web\"",
+    "build": "npm run build -w packages/shared && npm run build -w apps/api && npm run build -w apps/web",
+    "typecheck": "npm run typecheck -w packages/shared && npm run typecheck -w apps/api && npm run typecheck -w apps/web",
+    "test": "npm run test -w apps/api && npm run test -w apps/web",
+    "lint": "npm run lint -w apps/api && npm run lint -w apps/web",
+    "seed": "npm run seed -w apps/api",
+    "migrate": "npm run migrate -w apps/api",
+    "screenshots": "npm run screenshots -w apps/web",
+    "e2e": "npm run e2e -w apps/web"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0",
+    "typescript": "^5.6.3"
+  },
+  "overrides": {
+    "@types/express": "4.17.21",
+    "@types/express-serve-static-core": "4.17.41"
+  }
+}
