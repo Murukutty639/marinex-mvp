@@ -15,6 +15,7 @@
     "seed": "npm run seed -w apps/api",
     "migrate": "npm run migrate -w apps/api",
     "screenshots": "npm run screenshots -w apps/web",
+    "share": "npm run build && npm run share -w apps/api",
     "e2e": "npm run e2e -w apps/web"
   },
   "devDependencies": {

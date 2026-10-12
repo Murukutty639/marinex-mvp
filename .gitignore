@@ -1,4 +1,5 @@
 node_modules
+.share/
 dist
 coverage
 .env
@@ -10,5 +11,6 @@ coverage
 *.sqlite-wal
 storage
 docs/screenshots/*.png
+**/docs/screenshots/*.png
 playwright-report
 test-results
